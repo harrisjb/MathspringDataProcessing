@@ -1,0 +1,423 @@
+(lp0
+(lp1
+I176
+aVPP16-7-2
+p2
+aVIn general, do you feel interested when solving math problems?\u000a(Español: En general, ¿te sientes interesado/interesada cuando resuelves problemas de matemáticas?)
+p3
+aNaI1
+aI0
+aV1 - Not at all (Español: para nada)
+p4
+aV2 - A little (Español: apenas)
+p5
+aV3 - Somewhat (Español: un poco)
+p6
+aV4 - Quite a bit (Español: bastante)
+p7
+aV5 - Extremely (Español: muchísimo)
+p8
+aI2
+aa(lp9
+I177
+aVPP16-7-3
+p10
+aVDo you feel confident that you will eventually be able to understand the Mathematics material? (Español: ¿Te sientes seguro/segura de que puedes entender las matemáticas si cuentas con suficiente tiempo?)
+p11
+aNaI1
+aI0
+aV1 - Not at all (Español: para nada)
+p12
+aV2 - A little (Español: apenas)
+p13
+aV3 - Somewhat (Español: un poco)
+p14
+aV4 - Quite a bit (Español: bastante)
+p15
+aV5 - Extremely (Español: muchísimo)
+p16
+aI3
+aa(lp17
+I178
+aVPP16-7-4
+p18
+aV Do you get frustrated when solving math problems? (Español: ¿Te frustras cuando trabajas con los problemas de matemáticas?)
+p19
+aNaI1
+aI0
+aV1- Not at all (Español: para nada)
+p20
+aV2- A little (Español: apenas)
+p21
+aV3- Somewhat (Español: un poco)
+p22
+aV4- Quite a bit (Español: bastante)
+p23
+aV5- Extremely  (Español: muchísimo)
+p24
+aI4
+aa(lp25
+I179
+aVPP16-7-5
+p26
+aVDo you feel that solving math problems is exciting? (Español:  ¿Sientes que resolver problemas de matemáticas es emocionante? )
+p27
+aNaI1
+aI0
+aV1- Not at all (Español: para nada)
+p28
+aV2- A little (Español: apenas)
+p29
+aV3- Somewhat (Español: un poco)
+p30
+aV4- Quite a bit (Español: bastante)
+p31
+aV5- Extremely (Español: muchísimo)
+p32
+aI5
+aa(lp33
+I180
+aVPP16-7-6
+p34
+aVDo you avoid asking for help so that you look like you know what you are doing? (Español: ¿Evitas pedir ayuda para que parezca que sabes lo que estás haciendo?)
+p35
+aNaI1
+aI0
+aV1 - Not at all (Español: para nada)
+p36
+aV2 - A little (Español: apenas)
+p37
+aV3 - Somewhat (Español: un poco)
+p38
+aV4 - Quite a bit (Español: bastante)
+p39
+aV5 - Extremely (Español: muchísimo)
+p40
+aI6
+aa(lp41
+I181
+aVPP16-7-7
+p42
+aVWhen you are doing math exercises, is your goal to learn as much as you can? (Español: Cuando haces los ejercicios de matemáticas, ¿te pones la meta de aprender lo más que puedas?)
+p43
+aNaI1
+aI0
+aV1 - Not at all (Español: para nada)
+p44
+aV2 - A little (Español: apenas)
+p45
+aV3 - Somewhat (Español: un poco)
+p46
+aV4 - Quite a bit (Español: bastante)
+p47
+aV5 - Extremely (Español: muchísimo)
+p48
+aI7
+aa(lp49
+I182
+aVPP16-7-8
+p50
+aVDo you often ask for help when you are doing math even when you are not stuck? (Español: ¿Pides ayuda cuando haces matemáticas aunque no estés atascado?)
+p51
+aNaI1
+aI0
+aV1 - Not at all (Español: nunca)
+p52
+aV2 - A little (Español: rara vez)
+p53
+aV3 - Somewhat (Español: a veces)
+p54
+aV4 - Quite a bit (Español: frecuentemente)
+p55
+aV5 - Extremely (Español: siempre)
+p56
+aI8
+aa(lp57
+I183
+aVPP16-7-9
+p58
+aV Do you prefer learning about things that make you curious even if that means you have to work harder? (Español: ¿Prefieres aprender sobre cosas que te dan curiosidad, aunque signifiquen más trabajo?)
+p59
+aNaI1
+aI0
+aV1 - Not at all (Español: para nada)
+p60
+aV2 - A little (Español: apenas)
+p61
+aV3 - Somewhat (Español: un poco)
+p62
+aV4 - Quite a bit (Español: bastante)
+p63
+aV5 - Extremely (Español: muchísimo)
+p64
+aI9
+aa(lp65
+I184
+aVPP16-7-10
+p66
+aVDo you prefer to learn on your own, without being offered help? (Español: ¿Prefieres aprender solo, sin oferta de ayuda?)
+p67
+aNaI1
+aI0
+aV1 - Not at all (Español: para nada)
+p68
+aV2 - A little (Español: apenas)
+p69
+aV3 - Somewhat (Español: un poco)
+p70
+aV4 - Quite a bit (Español: bastante)
+p71
+aV5 - Extremely (Español: muchísimo)
+p72
+aI10
+aa(lp73
+I185
+aVPP16-7-11
+p74
+aVCompared to most of your other activities, how important is it for you to be good at math? (Español: ¿Si comparas con tus otras actividades, cuán importante es ser bueno en matemáticas?)
+p75
+aNaI1
+aI0
+aV1 - Not at all (Español: para nada)
+p76
+aV2 - A little (Español: apenas)
+p77
+aV3 - Somewhat (Español: un poco)
+p78
+aV4 - Quite a bit (Español: bastante)
+p79
+aV5 - Extremely (Español: muchísimo)
+p80
+aI11
+aa(lp81
+I186
+aVPP16-7-12
+p82
+aVWhen you are doing math, do you want to avoid making errors so that you don't look, or feel like, you don't know it? (Español: ¿Cuando haces matemáticas, quieres evitar cometer errores para no parecer, o para no sentir, que no sabes matemáticas?)
+p83
+aNaI1
+aI0
+aV1 - Not at all (Español: para nada)
+p84
+aV2 - A little (Español: apenas)
+p85
+aV3 - Somewhat (Español: un poco)
+p86
+aV4 - Quite a bit (Español: bastante)
+p87
+aV5 - Extremely (Español: muchísimo)
+p88
+aI12
+aa(lp89
+I187
+aVPP16-7-13
+p90
+aV How much do you like doing math? (Español: ¿Cuánto te gusta hacer matemáticas?)
+p91
+aNaI1
+aI0
+aV1 - Not at all (Español: para nada)
+p92
+aV2 - A little (Español: apenas)
+p93
+aV3 - Somewhat (Español: un poco)
+p94
+aV4 - Quite a bit (Español: bastante)
+p95
+aV5 - Extremely (Español: muchísimo)
+p96
+aI13
+aa(lp97
+I188
+aVPP16-7-14
+p98
+aVDoes solving math problems make you feel frustrated? (Español: ¿Te frustras cuando resuelves problemas de matemáticas?)
+p99
+aNaI1
+aI0
+aV1 - Not at all (Español: para nada)
+p100
+aV2 - A little (Español: apenas)
+p101
+aV3 - Somewhat (Español: un poco)
+p102
+aV4 - Quite a bit (Español: bastante)
+p103
+aV5 - Extremely (Español: muchísimo)
+p104
+aI14
+aa(lp105
+I189
+aVPP16-7-15
+p106
+aVSome math classes have extra-credit projects. If you had your choice, what kind of extra projects would you most like to do? (Español: Algunas clases de matemáticas tienen proyectos con puntaje extra; si tuvieras opción, ¿que tipos de proyectos extra preferirías?
+p107
+aNaI1
+aI0
+aV1. An extra-credit project that is easy, so I can get a better grade. (Español: Un proyecto extra que sea fácil, así me dan una buena nota)
+p108
+aV2. An extra-credit project where I could learn about things that interested me. (Español: Un proyecto en el que pudiera aprender sobre cosas que me interesan)
+p109
+aV3. An extra-credit project in an area I'm pretty good at, so I can show my teacher what I know. (Español: un proyecto en el que yo sea bueno, así puedo mostrarle a la maestra)
+p110
+aV4. An extra-credit project that isn't very difficult, so I don't have to work too hard. (Español: Un proyecto que no sea muy difícil, asi no tengo que trabajar mucho)
+p111
+aNaI15
+aa(lp112
+I190
+aVPP16-7-16
+p113
+aVWe are considering adding a new feature to our math practice software, to give you more control over the problems the software gives you. If you had your choice, what kind of problems would you like best? (Español: Estamos considerando añadir algo nuevo a este software de matemáticas, para darte más control sobre los problemas a resolver. Que prefieres de las siguientes opciones:)
+p114
+aNaI1
+aI0
+aV1. Problems that are not too hard, so I don't get many wrong (Español: Problemas que no sean difíciles, así no contesto mal)
+p115
+aV2. Problems that are pretty easy, so I will do well (Español: Problemas que sean bastante fáciles, así me va bien)
+p116
+aV3. Problems that I am pretty good at, so I can show that I'm smart (Español: Problemas que puedo resolver, así puedo mostrar que soy inteligente)
+p117
+aV4. Problems that I will learn a lot from, even if I won't look so smart (Español: Problemas con los que pueda aprender mucho, aunque no parezca inteligente)
+p118
+aNaI16
+aa(lp119
+I210
+aV2016-POST-8-4
+p120
+aVI learned a lot from using the Mathspring system (Español: Yo aprendí mucho con el programa de MathSpring.)
+p121
+aNaI1
+aI0
+aV1 - Not at all (Español: para nada)
+p122
+aV2 - A little (Español: un poco)
+p123
+aV3 - Somewhat (Español: algo)
+p124
+aV4 - Quite a bit (Español: bastante)
+p125
+aV5 - Extremely (Español: muchísimo)
+p126
+aI24
+aa(lp127
+I211
+aV2016-POST-8-5
+p128
+aVHow often did you have the sound muted, or your headphones away from your ears so that you could not hear? (Español: ¿Con cuánta frecuencia usaste mathSpring sin sonido, o no tenías los audífonos puestos?)
+p129
+aNaI1
+aI0
+aVNo sound most or all of the time. (Español: Sin sonido la mayoría del tiempo.)
+p130
+aVNo sound some of the time. (Español: A veces con sonido, a veces sin sonido accesible)
+p131
+aVSound on (and headphones kept on) most or all of the time. (Español: Sonido y audífonos accesibles la mayoría del tiempo)
+p132
+aNaNaI25
+aa(lp133
+I212
+aV2016-POST-8-6
+p134
+aVHow did you feel about being asked about your emotion in between problems in MathSpring? (Español: ¿Cuánto te gustaron las preguntas sobre cómo te sentías, entremedio de los problemas de MathSpring?)
+p135
+aNaI1
+aI0
+aVI really liked being asked about how I felt (Español: Me gustaron mucho las preguntas sobre mis sentimientos)
+p136
+aVIt was OK, I liked being asked how I felt (Español: Estuvieron bien las preguntas sobre mis sentimientos)
+p137
+aVI didn't like it that much, but it didn't bother me either (Español: No me gustan mucho, pero tampoco me molestaron)
+p138
+aVI would have preferred not to be asked (Español: Hubiera preferido no tener esas preguntas sobre mis emociones)
+p139
+aVIt really bothered me to be asked how I feel (Español: Me molestaron mucho las preguntas sobre mis sentimientos)
+p140
+aI26
+aa(lp141
+I213
+aV2016-POST-8-7
+p142
+aVWhat did you like about the software (that was not already said in previous answers)? (Español: ¿Qué te gusta sobre la programa (que no hayas dicho en respuestas anteriores)?)\u000a
+p143
+aNaI2
+aI0
+aNaNaNaNaNaI27
+aa(lp144
+I214
+aV2016-POST-8-9
+p145
+aVWhat suggestions do you have for improving the MathSpring program? (Español: ¿Tienes alguna sugerencia para mejorar este programa en la computadora?)
+p146
+aNaI2
+aI0
+aNaNaNaNaNaI28
+aa(lp147
+I262
+aVSixthGradePretest2016-Fractions-1
+p148
+aVThe fraction ½  is shaded in the fraction model above.  Write one fraction that is equivalent to one half (the shaded fraction). (Español: La fracción ½ está pintada de gris en el modelo de arriba. Escribe una fracción que sea equivalente a ½ (la fracción sombreada).
+p149
+aNaI0
+aI0
+aNaNaNaNaNaNaa(lp150
+I263
+aVSixthGradePretest2016-Mixed Numbers-5
+p151
+aVThe picture above shows  <img src="http://latex.codecogs.com/gif.latex?1\u005cfrac{1}{2}" /> (one and one half) pans of cookies that Reggie baked. Which of these is another way to write <img src="http://latex.codecogs.com/gif.latex?1\u005cfrac{1}{2}" />? (Español: El dibujo muestra las fuentes de galletas que una niña (Reggie) cocinó. ¿Cual de las siguentes opciones es otra forma de escribir <img src="http://latex.codecogs.com/gif.latex?1\u005cfrac{1}{2}" />? 
+p152
+aVc
+p153
+aI1
+aI0
+aV<img src="http://latex.codecogs.com/gif.latex?\u005cfrac{11}{2}"/> (eleven halves)
+p154
+aV<img src="http://latex.codecogs.com/gif.latex?\u005cfrac{18}{2}"/>   (eighteen halves)
+p155
+aV<img src="http://latex.codecogs.com/gif.latex?1\u005cfrac{6}{12}" /> (One and six twelfths)
+p156
+aV<img src="http://latex.codecogs.com/gif.latex?1\u005cfrac{6}{18}"/> (One and six eighteenths)
+p157
+aNaNaa(lp158
+I264
+aVSixthGradePretest2016-Easy Decimal Problems-9
+p159
+aVLucy wants to buy 4 hula hoops to play with her friends. Each hula hoop costs $1.50. Lucy has a coupon for $0.50 off the price of one hula hoop.  How much will Lucy owe for the 4 hula hoops? (Español: Lucy quiere comprar 4 hula hoops para jugar  con sus amigos. Cada Hula Hoop cuesta $1.50. Lucy tiene un cupón de $0.50 de descuento para un hula hoop. Cuánto le costarán  los 4 Hula Hoops, si aplica el descuento?)
+p160
+aVb
+p161
+aI1
+aI0
+aV$6.00
+p162
+aV$5.50
+p163
+aV$2.04
+p164
+aV$0.50
+p165
+aNaNaa(lp166
+I265
+aVSixthGradePretest2016-Expressions-16A farmer has 20 bins of apples. Each bin has 25 red apples and 3
+p167
+aVA farmer has 20 bins of apples.  Each bin has 25 red apples and 30 green apples.   Which of the following expressions can be used to find the total number of apples in all the bins?\u000a(Español: Un agricultor tiene 20 cajones llenos de manzanas. Cada cajón tiene 25 manzanas rojas y 30 manzanas verdes. Cual expresión puede usarse para calcular el total de manzanas en todos los cajones juntos?)
+p168
+ag161
+aI1
+aI0
+aV20 + (25 * 30)
+p169
+aV20 * (25 + 30)
+p170
+aV(20 + 25)  (20 + 30)
+p171
+aV(20 * 25) + (20 * 30)
+p172
+aNaNaa(lp173
+I266
+aVSixthGradePretest2016-Geometry-17
+p174
+aVMarty drew a rectangle on a grid. He shaded the rectangle, as shown above. What is the perimeter, in centimeters, of Marty's rectangle? (Perimeter is the distance around a shape.) (Español: Marty dibujó un rectangulo usando una grilla. Sombreó el rectángulo con gris, como en la figura de arriba ¿Cuál es el perímetro, en centímetros, del rectángulo de Marty? Recuerda que el perímetro es la distancia alrededor de una figura)
+p175
+aNaI0
+aI0
+aNaNaNaNaNaNaa.
