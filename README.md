@@ -2,7 +2,7 @@
 A collection of scripts for processing [Mathspring](https://github.com/marshall62/mathspring) data. This is intended as a starting point for anyone who wants to work with Mathspring's data.
 
 To get it running, all you should need to do is:
-- Have Python installed
+- Have Python installed (we used 2.7, no guarantees that it'll work out of the box on 3.4+)
 - Clone the repository
 - Get the necessary modules (such as with "pip install -r requirements.txt")
 - Run one of the data processing scripts ("python dec2016-empathy.py")
