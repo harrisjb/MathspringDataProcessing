@@ -72,11 +72,11 @@ def query(name, q):
 		cursor.execute(q)
 		for row in cursor.fetchall():
 			result.append(list(row))
-		with open(data_filename, 'w') as f:
+		with open(data_filename, 'wb') as f:
 			pickle.dump(result, f)
 		return result
 	elif os.path.exists(data_filename):
-		with open(data_filename, 'r') as f:
+		with open(data_filename, 'rb') as f:
 			return pickle.load(f)
 	else:
 		print "Error: You must have either a database login or the data file %s" % data_filename
