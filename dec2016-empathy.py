@@ -1,16 +1,21 @@
 from __future__ import division #makes it so that / is always floating point ("normal") division, and // is integer division
 import pymysql #The main package we use to pull data from the database
 import xlsxwriter #The package we use to write excel files with formatting and multiple sheets
+from scipy.stats import chisqprob #Used for the Likelihood Ratio Test
 from datetime import date
 from collections import defaultdict, deque
 import re, math, os, sys, pickle #these are default library modules
+
+###############################################################################
+###                            Configuration Area                           ###
+###############################################################################
 
 #Database url, username and password; these are for public read-only access
 db_hostname = "rose.cs.umass.edu"
 db_dbname = "wayangoutpostdb"
 db_username = None
 db_password = None
-reload_data = False #Set to False if you want to use cached data; this may be faster than querying the database
+reload_data = True #Set to False if you want to use cached data; this may be faster than querying the database
 if os.path.exists("database_user.txt"):
 	with open("database_user.txt") as f:
 		lines = f.readlines()
@@ -56,6 +61,10 @@ prepost_corrections_file = "dec2016_prepost_grading_corrections.tsv"
 #There MIGHT be issues someone creates a username containing "test", e.g. "foltest"
 # in which case this will need to be adjusted
 
+###############################################################################
+###                          End Configuration Area                         ###
+###############################################################################
+
 #Connect to the database
 cursor = None
 if db_username is not None and db_password is not None:
@@ -63,6 +72,8 @@ if db_username is not None and db_password is not None:
 	connection = pymysql.connect(host=db_hostname, user=db_username, passwd=db_password, db=db_dbname, charset="latin1")
 	cursor = connection.cursor()
 	print "Connected, building queries..."
+else:
+	print "Using cached data in the %s folder..." % data_folder
 
 #Just runs a query and dumps it into a Python list of row-tuples
 def query(name, q):
@@ -71,7 +82,7 @@ def query(name, q):
 		result = []
 		cursor.execute(q)
 		for row in cursor.fetchall():
-			result.append(list(row))
+			result.append([elt.strip() if hasattr(elt, "strip") else elt for elt in row])
 		with open(data_filename, 'wb') as f:
 			pickle.dump(result, f)
 		return result
@@ -121,7 +132,6 @@ eventlog_query += " ORDER BY studId ASC, time ASC;"
 print "Running the query to get the event log data..."
 
 #Pull the event log data
-# print eventlog_query
 eventlog = query("eventlog", eventlog_query)
 
 #We also want the names of the columns, pull those now
@@ -646,6 +656,8 @@ for emotion in ("Confidence", "Frustration"):
 print "Writing " + output_file + "..."
 workbook.close()
 
+print "\n----------\n"
+
 print "Calculating Markov models for within-tutor emotion self-reports based on pedagogies..."
 
 smoothing = 0.01 #pseudocount smoothing strength
@@ -691,11 +703,6 @@ for _,emotion_metrics in student_timeseries_emotion_metrics.items():
 print "Transition probabilities:"
 convertTransitionCountsToLogProbabilities(transitions)
 
-# #Compile all the transition events
-# message_types = ("Empathy", "GrowthMindset", "SuccessFailure")
-# transitions = dict(Confidence = {message_type:[] for message_type in message_types},
-				  # Frustration = {message_type:[] for message_type in message_types}))
-
 #Go through all the transition events and compute the likelihood
 # of it being produced by either the null model or the alternate models
 null_loglikelihood = 0
@@ -712,19 +719,17 @@ for _,emotion_metrics in student_timeseries_emotion_metrics.items():
 			if prev_state is not None: #ignore the first row, because we don't have a prev state
 				null_loglikelihood += math.log(transitions[emotion]["Combined"][prev_state][state])
 				alt_loglikelihood += math.log(transitions[emotion][metric["Pedagogy"]][prev_state][state])
-				# transitions[metric["Pedagogy"]] = (prev_state, state)
-				# transitions["Combined"] = (prev_state, state)
-				# for message_type in message_types:
-					# if metric[message_type + " Messages"] > 0:
-						# transitions[emotion][message_type]
 			prev_state = state
 
-log_ratio = null_loglikelihood - alt_loglikelihood
-# print "Null logL =", null_loglikelihood
-# print "Alt  logL =", alt_loglikelihood
-p = math.exp(log_ratio)
+likelihood_ratio = 2 * (alt_loglikelihood - null_loglikelihood)
+# 7 degrees of freedom difference because 2 parameters per model,
+# and the alt is using an ensemble of 3 condition-specific models vs the generic
+# Also, the condition-specific models have an extra implicit parameter
+p = chisqprob(likelihood_ratio, 7)
 
-print "For the likelihood ratio test on our Markov models, we have p = %.3e" % p
+print "For the likelihood ratio test on our condition-based Markov models, we have p = %.3e" % p
+
+print "\n----------\n"
 
 print "Calculating Markov models for within-tutor emotion self-reports based on messages..."
 
@@ -772,10 +777,8 @@ for _,emotion_metrics in student_timeseries_emotion_metrics.items():
 for emotion, message_types in null_loglikelihoods.items():
 	for message_type, null_loglikelihood in message_types.items():
 		alt_loglikelihood = alt_loglikelihoods[emotion][message_type]
-		log_ratio = null_loglikelihood - alt_loglikelihood
-		# print "Null logL =", null_loglikelihood
-		# print "Alt  logL =", alt_loglikelihood
-		p = math.exp(log_ratio)
+		likelihood_ratio = 2 * (alt_loglikelihood - null_loglikelihood)
+		p = chisqprob(likelihood_ratio, 1)
 		print "For the likelihood ratio test on our Markov models for %s after receiving %s messages, we have p = %.3e" % (emotion, message_type, p)
 				
 print "Done."
