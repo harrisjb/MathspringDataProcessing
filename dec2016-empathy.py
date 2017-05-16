@@ -1,7 +1,7 @@
 from __future__ import division #makes it so that / is always floating point ("normal") division, and // is integer division
 import pymysql #The main package we use to pull data from the database
 import xlsxwriter #The package we use to write excel files with formatting and multiple sheets
-from scipy.stats import chisqprob #Used for the Likelihood Ratio Test
+from scipy.stats.distributions import chi2 #Used for the Likelihood Ratio Test
 from datetime import date
 from collections import defaultdict, deque
 import re, math, os, sys, pickle #these are default library modules
@@ -725,7 +725,7 @@ likelihood_ratio = 2 * (alt_loglikelihood - null_loglikelihood)
 # 7 degrees of freedom difference because 2 parameters per model,
 # and the alt is using an ensemble of 3 condition-specific models vs the generic
 # Also, the condition-specific models have an extra implicit parameter
-p = chisqprob(likelihood_ratio, 7)
+p = chi2.sf(likelihood_ratio, 7)
 
 print "For the likelihood ratio test on our condition-based Markov models, we have p = %.3e" % p
 
@@ -778,7 +778,7 @@ for emotion, message_types in null_loglikelihoods.items():
 	for message_type, null_loglikelihood in message_types.items():
 		alt_loglikelihood = alt_loglikelihoods[emotion][message_type]
 		likelihood_ratio = 2 * (alt_loglikelihood - null_loglikelihood)
-		p = chisqprob(likelihood_ratio, 1)
+		p = chi2.sf(likelihood_ratio, 1)
 		print "For the likelihood ratio test on our Markov models for %s after receiving %s messages, we have p = %.3e" % (emotion, message_type, p)
 				
 print "Done."
